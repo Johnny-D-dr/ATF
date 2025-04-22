@@ -14,7 +14,7 @@ public class HomePage extends AbstractPage {
   @FindBy(xpath = "//img[@alt='profile picture']")
   private WebElement userMeniu;
 
-  @FindBy(xpath = "//h6[text()='Logout']")
+  @FindBy(xpath = "//a[text()='Logout']")
   private WebElement logOutButton;
 
 

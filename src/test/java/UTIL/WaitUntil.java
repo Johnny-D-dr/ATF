@@ -13,6 +13,7 @@ public class WaitUntil extends AbstractPage {
     public WaitUntil(WebDriver driver) {
         super(driver);
     }
+
     public static void waitUntilElementIsDisplayed(WebElement element) {
         WebDriverWait webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(10));
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(element.getText())));
@@ -20,7 +21,7 @@ public class WaitUntil extends AbstractPage {
 
     public static void waitUntil(long seconds) {
         try {
-            Thread.sleep(seconds*1000);
+            Thread.sleep(seconds * 1000);
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }

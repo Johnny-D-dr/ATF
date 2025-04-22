@@ -16,7 +16,7 @@ public class PropretyLoader {
             e.printStackTrace();
         }
         if (name != null) {
-            value=prop.getProperty(name);
+            value = prop.getProperty(name);
         }
         return value;
     }
